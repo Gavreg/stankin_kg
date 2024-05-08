@@ -1,0 +1,75 @@
+	\makeatletter
+\defbeamertemplate*{title page}{my theme}
+{
+	
+	\hfill
+	
+	\begin{beamercolorbox}[wd=.9\paperwidth,center,]{title}%
+		
+	\end{beamercolorbox}%	
+	
+	\vbox to 1em {}
+	
+	\begin{beamercolorbox}[wd=.9\paperwidth,center,]{title}%
+		\usebeamerfont{subtitle}%
+		\hfill
+		
+		\insertsubtitle
+		
+		\usebeamerfont{title}%
+		\inserttitle{} \\[0.5em]
+		
+		
+		
+	\end{beamercolorbox}%	
+	\hfill\hfill
+	
+	\begin{beamercolorbox}[wd=.9\paperwidth,center,]{}%
+		\usebeamerfont{author}%
+		\hfill \\[0.5em]
+		\insertauthor{}
+		
+		\vbox to 1em{}
+		\usebeamerfont{institute}%
+		\insertinstitute {}
+		
+		\vbox to 1em{}			
+		{\; }\insertshortdate{}
+		
+	\end{beamercolorbox}%	
+	\hfill\hfill
+	
+	\vbox to 5em{}
+	
+	
+}
+\defbeamertemplate*{footline}{my theme}{
+	\leavevmode%
+	\hbox{%
+		\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+			\usebeamerfont{author in head/foot}%
+			\insertauthor~~\beamer@ifempty{\insertshortinstitute}{}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.65\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+			\usebeamerfont{title in head/foot}\insertshortinstitute
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+			\usebeamerfont{date in head/foot}\hspace*{2em}
+			\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+	\end{beamercolorbox}}%
+}
+
+
+
+\makeatother
+
+
+
+
+
+
+%float page top aligment
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
