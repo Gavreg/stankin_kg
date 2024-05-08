@@ -4,5 +4,10 @@
 *.gz
 *.out
 *.toc
+*.log
+*.bbl
+*.blg
+
+*.bkp
 
 *.gvr
